@@ -1,0 +1,8 @@
+Azure Key Vault is a cloud service that securely stores and manages secrets, encryption keys, and digital certificates. It helps protect sensitive information by keeping it out of application code and configuration files.
+IT can be used storing passwords, API keys, and connection strings,managing encryption keys,storing SSL/TLS certificates,protecting secrets used by cloud and AI application sand enabling centralized secret management
+
+Access to Azure Key Vault is controlled using Azure Role-Based Access Control (Azure RBAC) or Key Vault access policies (legacy model).Azure Key Vault provides diagnostic logs and monitoring to track access and detect suspicious activity.
+
+Defense in depth uses multiple layers of security to protect Key Vault and its secrets with recommended security Layers such as  authenticate with Microsoft Entra ID,reuire Multi-Factor Authentication (MFA) for administrators,use Azure RBAC with least privilege,enable Managed Identities for applications
+,restrict access using Private Endpoints,disable public network access where possible,enable Soft Delete and Purge Protection,rotate secrets and encryption keys regularly
+,Monitor access with logging and alerts.For AI Workloads WE Store AI service API keys, database credentials, storage keys, and other sensitive configuration values in Azure Key Vault instead of hardcoding them in applications.
